@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>webpage</title>
+    <style>
+        img.composited {
+            max-width: 1000px;
+            height: auto;
+        }
+
+        img.butterfly {
+            max-width: 800px;
+            height: auto;
+        }
+    </style>
+</head>
+
+<body>
+    <img class="composited" alt="Jackson W. standing in forest" src="compositedIMG.png" />
+    <img class="butterfly" alt="Butterfly" src="butterfly_done.svg" />
+    <rect class="butterfly" img class="butterfly"/>
+    <rect id="abc" class="butterfly" img class="butterfly" />
+    <script>
+        document.querySelector('img.butterfly').addEventListener('click',function(){
+            document.body.style.backgroundColor = '#000000';
+        });
+        document.getElementById('abc').addEventListener('click',function(){
+            document.body.style.backgroundColor = '#000000';
+        });
+    </script>
+</body>
+
+</html>
